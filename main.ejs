@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MY PROJECT</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">INT222 project work</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+          <div class="navbar-form navbar-right">
+          <font color="white">welcome, <%=sessionnick %> 님 &nbsp;<a class="btn btn-default" href="/auth/logout" role="button">log out &raquo;</a></font>
+
+          </div>
+			</div>
+			<!--/.navbar-collapse -->
+		</div>
+	</nav>
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>welcome!</h1>
+			<p>This homepage is for int222 project.</p><p> node.js, mongoDB, soket.io, bootstrap, jqueryI understand, learn and implement the function.</p>
+			<p>Click the button below for detailed functions</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Login</h2>
+				<p>Provides a login function.</p><p>User's own session is saved and used.</p>
+				<p><a class="btn btn-info" href="/auth/logout" role="button">log out &raquo;</a></p>
+			</div>
+			<div class="col-md-4">
+				<h2>Upload</h2>
+				<p>Provides file upload function.</p><p>The saved files are written to the db and can be checked after refreshing or logging out.</p>
+				<p><a class="btn btn-success" href="/upload" role="button">file upload &raquo;</a></p>
+			</div>
+			<div class="col-md-4">
+				<h2>Chating</h2>
+				<p>Provides a chat service.</p><p> socket.io Chat service is provided through broad casting.</p>
+				<p><a class="btn btn-danger" href="/chating" role="button">chating &raquo;</a></p>
+			</div>
+		</div>
+
+		<hr>
+
+	</div>
+	<!-- /container -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), include each file you need if you don't want it -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
